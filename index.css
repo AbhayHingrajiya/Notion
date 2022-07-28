@@ -1,0 +1,79 @@
+/* =======================================
+    Start Header Area
+======================================= */
+
+.header{
+    position: relative;
+    background-color: rgb(233, 78, 78);
+    width: 100%;
+}
+.header_text{
+    text-align: center;
+}
+[contenteditable]{
+    outline: 0px solid transparent;
+}
+.change_cover{
+    visibility: hidden;
+    position: absolute;
+    bottom: 2px;
+    right: 10%;
+    border: 0px solid black;
+    padding: 2px;
+    cursor: pointer;
+    background-color: antiquewhite;
+}
+.header:hover .change_cover{
+    visibility: visible;
+}
+.change_cover_dropdown{
+    position: absolute;
+    top: 98%;
+    right: 10%;
+    max-width: 5%;
+    border: 0ch;
+}
+.header_color{
+    width: 100px;
+    height: 50px;
+    margin-bottom: 2px;
+}
+.header_color:hover{
+    height: 60px;
+    box-shadow: 2px 2px;
+}
+.header_text_dropdown{
+    position: absolute;
+    top: 37%;
+    left: 32%;
+    z-index: 1;
+}
+.header_text_style, .header_text_background_color, .header_text_size, .header_text_color, .header_text_underline, .header_text_shadow{
+    cursor: pointer;
+}
+.header_text_menu, .header_text_dropdown{
+    visibility: hidden;
+    cursor: pointer;
+}
+/* =======================================
+    End Header Area
+======================================= */
+
+.body_dropdown p:hover{
+    background-color: bisque;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+input[type='file']{
+    display: none;
+}
+.body_dropdown{
+    position: absolute;
+    visibility: hidden;
+    cursor: pointer;
+    z-index: 1;
+
+}
+.paragraph_text, .un_order_list, .button, .body_dropdown{
+    display: inline;
+}
